@@ -25,17 +25,17 @@ function mostrarDados(bonusDado, Dado) {
         case 1:
             return bonus = parseInt(prompt("¿De cuanto es el bonus? "));
         case 2:
-            return bonus = prompt("¿De cuanto es el bonus? ");
+            return bonus = parseInt(prompt("¿De cuanto es el bonus? "));
         case 3:
-            return bonus = prompt("¿De cuanto es el bonus? ");
+            return bonus = parseInt(prompt("¿De cuanto es el bonus? "));
         case 4:
-            return bonus = prompt("¿De cuanto es el bonus? ");
+            return bonus = parseInt(prompt("¿De cuanto es el bonus? "));
         case 5:
-            return bonus = prompt("¿De cuanto es el bonus? ");
+            return bonus = parseInt(prompt("¿De cuanto es el bonus? "));
         case 6:
-            return bonus = prompt("¿De cuanto es el bonus? ");
+            return bonus = parseInt(prompt("¿De cuanto es el bonus? "));
         case 7:
-            return bonus = prompt("¿De cuanto es el bonus? ");
+            return bonus = parseInt(prompt("¿De cuanto es el bonus? "));
     }
 }
 
@@ -72,5 +72,3 @@ let usuario = pedirNombre();
 let miDado = mostrarDados(bonusDado, Dado);
 let result = resultado(dadoElejido);
 totalDado();
-
-console.log(usuario + ", tu dado es: " + result + " " + miDado);
