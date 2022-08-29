@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+}
+
+header {
+    background-color: rgb(152, 39, 152);
+    height: 200px;
+}
+
+.a {
+    text-decoration: none;
+    color: greenyellow;
+}
+
+.h1 {
+    font-size: 400px;
+    color: greenyellow;
+}
+
+.seleccion {
+    position: relative;
+    margin-top: 50px;
+    left: 100px;
+}
