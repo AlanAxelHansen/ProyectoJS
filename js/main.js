@@ -11,64 +11,77 @@ function pedirNombre() {
 
 let bonusDado;
 let dadoElejido;
-let Dado;
-let bonus;
+let bonus = 0;
+let result;
 
-function mostrarDados(bonusDado, Dado) {
+const Dado = [
+    {
+        id: 0,
+        texto: ("Agarra el dado: D100"),
+        numero: 100,
+    },
+    {
+        id: 1,
+        texto: ("Agarra el dado: D20"),
+        numero: 20,
+     },
+     {
+        id: 2,
+        texto: ("Agarra el dado: D12"),
+        numero: 12,
+     },
+     {
+        id: 3,
+        texto: ("Agarra el dado: D10"),
+        numero: 10,
+     },
+     {
+        id: 4,
+        texto: ("Agarra el dado: D8"),
+        numero: 8,
+     },
+     {
+        id: 5,
+        texto: ("Agarra el dado: D6"),
+        numero: 6,
+     },
+     {
+        id: 6,
+        texto: ("Agarra el dado: D4"),
+        numero: 4,
+     },
+];
+
+let Dadaso;
+
+function eleccionDado(punto) {
     
-    do {
-        Dado = parseInt(prompt("¿Que dado roleara? : \n1)D100\n2)D20\n3)D12\n4)D10\n5)D8\n6)D6\n7)D4 "))
-    } while (Dado < 1 || Dado > 7)
+        punto = parseInt(prompt("Agarra el dado : \n0)D100\n1)D20\n2)D12\n3)D10\n4)D8\n5)D6\n6)D4 "));
+    
+        Dadaso = punto;
 
-    dadoElejido = Dado;
-    switch (Dado) {
-        case 1:
-            return bonus = parseInt(prompt("¿De cuanto es el bonus? "));
-        case 2:
-            return bonus = parseInt(prompt("¿De cuanto es el bonus? "));
-        case 3:
-            return bonus = parseInt(prompt("¿De cuanto es el bonus? "));
-        case 4:
-            return bonus = parseInt(prompt("¿De cuanto es el bonus? "));
-        case 5:
-            return bonus = parseInt(prompt("¿De cuanto es el bonus? "));
-        case 6:
-            return bonus = parseInt(prompt("¿De cuanto es el bonus? "));
-        case 7:
-            return bonus = parseInt(prompt("¿De cuanto es el bonus? "));
-    }
-}
+    const o = Dado.find(valor => {
+        valor.id == punto;
+    });
 
+    console.log(Dado[punto]);
+    console.log(punto);
+};
 
-
-function resultado(Dado) {
-    if (Dado == 1) {
-        return Math.floor(Math.random () * 100+1);
-    }
-    else if (Dado == 2) {
-        return Math.floor(Math.random () * 20+1);
-    } else if (Dado == 3) {
-        return Math.floor(Math.random () * 12+1);
-    } else if (Dado == 4) {
-        return Math.floor(Math.random () * 10+1);
-    } else if (Dado == 5) {
-        return Math.floor(Math.random () * 8+1);
-    } else if (Dado == 6) {
-        return Math.floor(Math.random () * 6+1);
-    } else if (Dado == 7) {
-        return Math.floor(Math.random () * 4+1);
-    }
-}
-
+function resultado() {
+    bonus = parseInt(prompt("¿De cuanto es el bonus? "));
+    
+    result = (Math.floor(Math.random () * Dado[Dadaso].numero + 1));
+};
 
 function totalDado() {
     alert("Tu resultado es: " + result + "+" + bonus);
     let juan = (result + bonus);
     alert("La suma de ambos es: " + (juan))
-}
+};
 
 
 let usuario = pedirNombre();
-let miDado = mostrarDados(bonusDado, Dado);
-let result = resultado(dadoElejido);
+let miDado = eleccionDado(Dadaso);
+let Bonus = resultado();
 totalDado();
