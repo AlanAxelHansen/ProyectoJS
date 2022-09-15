@@ -14,19 +14,21 @@
     </header>
 
     <main>
-        <section class="seleccion">
-            <select name="" id="numero">
-                <option value="d10">d100</option>
-                <option value="d20">d20</option>
-                <option value="d12">d12</option>
-                <option value="d10">d10</option>
-                <option value="d8">d8</option>
-                <option value="d6">d6</option>
-                <option value="d4">d4</option>
-            </select>
-            <input type="number" name="numero" id="entrada">
-            <button>Tirala</button>
-        </section>
+
+        <button class="switch" id="switch">
+            <span><i class="fas fa-sun">🌝</i></span>
+            <span><i class="fas fa-moon">🌚</i></span>
+        </button>
+
+        <select name="dadito" onchange="seleccionarLenguaje();">
+            <option value="D100">D100</option>
+            <option value="D20">D20</option>
+            <option value="D12">D12</option>
+            <option value="D10">D10</option>
+            <option value="D8">D8</option>
+        </select>
+        
+        <div class="resultado"></div>
     </main>
 
     <script src="./js/main.js"> </script>
