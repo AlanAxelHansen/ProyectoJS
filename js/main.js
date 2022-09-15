@@ -35,7 +35,8 @@ let bonusDado,
 dadoElejido,
 bonus = 0,
 result,
-Dadaso;
+Dadaso,
+caras = 0;
 
 const Dado = [
     {
@@ -74,6 +75,7 @@ const Dado = [
         numero: 4,
      },
 ];
+
 
 function seleccionarDado(){
    let dadito = document.getElementsByName('dadito');
