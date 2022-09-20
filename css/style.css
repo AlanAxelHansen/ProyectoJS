@@ -21,16 +21,19 @@ body {
     background: #111111;
   }
 
+  h1 {
+      font-size: 50px;
+      color: rgb(0, 225, 255);
+      text-decoration: none;
+      width: 310px;
+      
+  }
 
-.a {
+a {
     text-decoration: none;
     color: greenyellow;
 }
 
-.h1 {
-    font-size: 400px;
-    color: greenyellow;
-}
 
 .seleccion {
     position: relative;
@@ -48,6 +51,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     outline: none;
+    left: 90%;
   }
   
 .switch::after {
@@ -84,4 +88,51 @@ body {
     display: block;
     background: none;
     color: #fff;
+  }
+
+  .caja {
+  display: flex
+  }
+
+  .caja1 {
+    display:block;
+    position: relative;
+    left: 15%;
+    max-width: 400px;
+    height: 400px;
+    background-color: rgb(190, 136, 105);
+    color: rgb(134, 50, 134);
+    border: 5px solid #000;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .caja2 {
+    display:block;
+    position: relative;
+    left: 35%;
+    max-width: 400px;
+    height: 400px;
+    background-color: rgb(190, 136, 105);
+    color: rgb(134, 50, 134);
+    border: 5px solid #000;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .resultado {
+    position: relative;
+    display: block;
+    top: 70px;
+    left: 35%;
+    max-width: 400px;
+    height: 100px;
+    background-color: rgb(190, 136, 105);
+    color: rgb(134, 50, 134);
+    border: 5px solid #000;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 40px;
   }
