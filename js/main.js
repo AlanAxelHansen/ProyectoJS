@@ -98,6 +98,14 @@ function dadinhoCustom(){
 
 function mostrarResultado(){
    document.getElementById("resultado__texto").innerText = resultTotal;
+   Swal.fire({
+      title: '¡SOS MUY BUENO!',
+      text: 'Tu nivel en el Buenometro es de ' + resultTotal + ". Deberas mejorarlo para ser Dios",
+      imageUrl: "../assets/Hoakkimn cara.png",
+      imageWidth: 400,
+      imageHeight: 400,
+      imageAlt: 'Custom image',
+    })
 };
 
 totalFlat = seleccionarDado(resultTotal);
